@@ -8,6 +8,11 @@
   font-style: normal;
 }
 
+html, body {
+  height: 100vh;      
+  overflow: hidden;
+  margin: 0; 
+}
 :root {
   --bg-color: #000000;
   --second-bg-color: rgb(255, 255, 255);
@@ -185,12 +190,12 @@ section {
 }
 
 .btn{
-  display: inline-block;
+  display: inline-flex;
   padding: 1rem 9rem;
-  background-color: white;
+  background-color: rgb(0, 131, 17);
   border-radius: 3rem;
   font-size: 4rem;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }
 
@@ -309,4 +314,279 @@ section {
 
 .service-info i{
   font-size: 9rem;
+}
+
+.projects {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.projects-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  row-gap: 1rem;
+}
+
+.project-card {
+  width:100%;
+  max-width: 220px;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid transparent;
+  border-radius: 3rem;
+  padding: 5rem 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  background-color: var(--second-bg-color);
+  color: rgb(3, 54, 3);
+  transform: scale(1.03);
+}
+
+.project-card img{
+  max-width: 100%;
+  height: 120px;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.project-card p {
+  color: black;
+  font-size: 10rem;
+  opacity: 0;
+  max-height: 0;
+  transition: 0.3s ease;
+  display: none;
+}
+.project-card.active p {
+  opacity: 1;
+  max-height: 200px;
+}
+
+.btn2{
+ display: inline-block;
+ padding: 1rem 2rem;
+ background-color: rgb(0, 131, 17);  border-radius: 3rem;
+ color: rgb(255, 255, 255);
+ cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(5px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  position: relative; 
+  background: #fff;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  transform: scale(0.8);
+  transition: 0.3s ease;
+  color: black;
+}
+
+.modal-content h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.modal-content p {
+  font-size: 4rem;
+  line-height: 1.5;
+  margin-left:30px ;
+}
+
+.modal.active .modal-content {
+  transform: scale(1); /* smooth pop */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 3rem;
+  cursor: pointer;
+  color: black;
+}
+
+.contact-footer-wrapper {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 10%;
+  gap: 5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Contact Section */
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 50%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-top: 50px;
+  font-size: 5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.contact-subtitle {
+  font-size: 2rem;
+  color: #aaa;
+  margin-bottom: 3rem;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+   width: 50%;
+  max-width: 100%;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #181717;
+  color: #fff;
+  outline: none;
+  display: block;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #777777;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #222;
+}
+
+.contact-form button.btn-contact {
+  padding: 2rem 3rem;
+  font-size: 4rem;
+  border-radius: 3rem;
+  background: linear-gradient(70deg, #000, #205819);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  max-width: 50%;
+  display: block;
+}
+
+.contact-form button.btn-contact:hover {
+  transform: scale(1.05);
+}
+
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0 2rem;
+  background-color: #000000;
+  border-top: 1px solid #141414;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer .social-icons a {
+  font-size: 3rem;
+  color: #fff;
+  transition: 0.3s ease;
+  border: 2px solid #ffffff;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.footer .social-icons a:hover {
+  background-color: #39ff14;
+  transform: scale(1.3);
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.footer ul li a:hover {
+  border-bottom: 1px solid #39ff14;
+}
+
+.footer .copyright {
+  color: #aaa;
+  font-size: 3rem;
 }

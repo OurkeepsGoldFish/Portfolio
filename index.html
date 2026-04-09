@@ -20,10 +20,14 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Contact">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <button class="gradient-btn">Contact Me</button>
+      <a href="#contact"
+      <button
+       class="gradient-btn">Contact Me</button>
+    </a>
+
 
   </header>
 
@@ -133,13 +137,108 @@
     <h2 class="heading">My Projects</h2>
 
     <div class="projects-box">
+
       <div class="project-card">
-        <img src="">
+        <img src="./images/project1.png" alt="">
+
+        <h3>E-commerce API Documentation</h3>
+        <p>
+          Dynamic E-commerce Workflow Management. The system
+          features dynamic routes for order processing, real-time
+          inventory updaates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="./images/project2.png" alt="1">
+
+        <h3>Course Booking API Documentation</h3>
+        <p>
+          Restful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="./images/project3.png" alt="">
+
+        <h3>Course booking App</h3>
+        <p>
+          A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly. 
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="./images/project4.png" alt="">
+
+        <h3>E-commerce App</h3>
+        <p>
+          MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.
+        </p>
        
+      </div>
+
+      <div class="project-card">
+        <img src="./images/project5.png" alt="">
+
+        <h3>Airline Booking System Mockup</h3>
+        <p>
+          Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="./images/project6.png" alt="">
+        <h3>Airline Booking System Prototype</h3>
+        <p>
+          Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.
+        </p>
       </div>
     </div>
   </section>
-  <script src="index.js"></script>
+    <section class="contact-footer-wrapper" id="contact">
+  <!-- Contact Section -->
+  <div class="contact">
+    <div class="contact-container">
+      <h2>Contact <span>Me</span></h2>
+      <p class="contact-subtitle">Have a project in mind? Let's talk.</p>
 
+      <form class="contact-form" action="#">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="number" placeholder="Phone Number">
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your Message" rows="6"></textarea>
+        <button type="submit" class="btn-contact">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="#"><i class="bx bxl-github"></i></a>
+      <a href="#"><i class="bx bxl-linkedin"></i></a>
+      <a href="#"><i class="bx bxl-instagram"></i></a>
+      <a href="#"><i class="bx bxl-twitter"></i></a>
+    </div>
+
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <p class="copyright">© Gabriel Ramores | All Rights Reserved</p>
+  </footer>
+</section>
+  <script src="index.js" defer></script>
+<div class="modal" id="projectModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
 </body>
 </html>
