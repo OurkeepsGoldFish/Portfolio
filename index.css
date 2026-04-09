@@ -8,11 +8,6 @@
   font-style: normal;
 }
 
-html, body {
-  height: 100vh;      
-  overflow: hidden;
-  margin: 0; 
-}
 :root {
   --bg-color: #000000;
   --second-bg-color: rgb(255, 255, 255);
