@@ -320,6 +320,34 @@
   </div>
 </section>
 
+<!-- ============ THEME SANDBOX ============ -->
+<section class="sandbox section" id="sandbox">
+  <h2 class="section-title">Live Theme Customizer</h2>
+  <div class="sandbox-container container grid">
+    <div class="sandbox-data">
+      <h3 class="sandbox-title">Make It Yours</h3>
+      <p class="sandbox-description">A good engineer doesn't just write code—they build systems. Drag the slider to interact with my CSS variables in real-time and see the entire website adapt instantly.</p>
+    </div>
+    
+    <div class="sandbox-window">
+      <div class="sandbox-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="sandbox-filename">style.css</span>
+      </div>
+      <div class="sandbox-code">
+<pre><code><span class="syntax-selector">:root</span> {
+  <span class="syntax-property">--first-hue</span>: <span class="syntax-value" id="hue-value">155</span>; <span class="syntax-comment">/* Drag to change! */</span>
+}</code></pre>
+        <div class="sandbox-control">
+          <input type="range" min="0" max="360" value="155" class="sandbox-slider" id="theme-slider" aria-label="Theme color slider">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PORTFOLIO ============ -->
 <section class="work section" id="portfolio">
   <h2 class="section-title">Portfolio</h2>

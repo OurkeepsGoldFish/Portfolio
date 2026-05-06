@@ -251,3 +251,16 @@ sr.reveal('.footer-social, .footer-copyright', {
 
 /* ================= GLOBAL ================= */
 sr.reveal('.section-title');
+
+/* ================= LIVE THEME CUSTOMIZER (SANDBOX) ================= */
+const themeSlider = document.getElementById('theme-slider');
+const hueValueText = document.getElementById('hue-value');
+const rootElement = document.documentElement;
+
+if (themeSlider && hueValueText) {
+  themeSlider.addEventListener('input', (e) => {
+    const newHue = e.target.value;
+    rootElement.style.setProperty('--first-hue', newHue);
+    hueValueText.textContent = newHue;
+  });
+}
