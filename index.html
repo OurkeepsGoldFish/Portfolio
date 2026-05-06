@@ -3,91 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
-
-<link rel="stylesheet" href="assets/CSS/style.css">
-  <title>Portfolio Website</title>
+  <meta name="description" content="Gabriel Ramores — UI/UX Designer portfolio. Specializing in responsive design, CMS development, and API integrations.">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <title>Gabriel Ramores | UI/UX Designer Portfolio</title>
 </head>
 <body>
-<!------------ HEADER ------------>
-<header class="header" id= "header">
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
   <nav class="nav container">
-   <a href="" class="nav-logo">G.R.</a> 
+    <a href="#home" class="nav-logo">G.R.</a>
 
-  <div class="nav-menu" id="nav-menu">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="#home" class="nav-link active-link">Home</a>
-      </li>
+    <div class="nav-menu" id="nav-menu">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="nav-link active-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <i class="ri-close-line nav-close" id="nav-close"></i>
+    </div>
 
-      <li class="nav-item">
-        <a href="#about" class="nav-link">About</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#services" class="nav-link">Services</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#skills" class="nav-link">Skills</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#portfolio" class="nav-link">Portfolio</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#contact" class="nav-link">Contact</a>
-      </li>
-
-    </ul>
-
-    <i class="ri-close-line nav-close" id="nav-close"></i>
-  </div>
-
-  <div class="nav-btns">
-    <i class="ri-sun-line change-theme" id="theme-toggle"></i>
-
-    <div class="nav-toggle" >
-      <i class="ri-menu-line" id="nav-toggle"></i>
-  </div>
-  </div>
+    <div class="nav-btns">
+      <i class="ri-sun-line change-theme" id="theme-toggle" role="button" aria-label="Toggle theme" tabindex="0"></i>
+      <div class="nav-toggle">
+        <i class="ri-menu-line" id="nav-toggle" role="button" aria-label="Open navigation menu" tabindex="0"></i>
+      </div>
+    </div>
   </nav>
 </header>
 
-<!------------ Main ------------>
-
+<!-- ============ MAIN ============ -->
 <main class="main">
-<!------------ HOME ------------>
+
+<!-- ============ HOME ============ -->
 <section class="home section" id="home">
   <div class="home-container container grid">
     <div class="home-data">
-      <h1 class="home-title"> Gabriel Ramores</h1>
+      <h1 class="home-title">Gabriel Ramores</h1>
       <h3 class="home-job">UI/UX Designer</h3>
-
       <p class="home-description">Designed user-focused interfaces that improved recruitment flow efficiency, resulting in a 20% increase in successful hiring outcomes.</p>
-      
-      <a href="assets/pdf/05_GabrielRamores_UI_UX_Resume_i_042126.pdf" download="" class="button">
-        Download CV</a>
+      <a href="assets/pdf/05_GabrielRamores_UI_UX_Resume_i_042126.pdf" download class="button">Download CV</a>
     </div>
 
     <div class="home-img-wrapper">
-      <img src="assets/images/profile1.png" alt="" class="home-img">
-      </div>
-      
-      <div class="home-social">
-        <a href="https://www.linkedin.com/" target="_blank" class="home-social-link"><i class="ri-linkedin-fill"></i></a>
-        <a href="https://www.instagram.com/" target="_blank" class="home-social-link"><i class="ri-instagram-line"></i></a>
-        <a href="https://www.github.com/" target="_blank" class="home-social-link"><i class="ri-github-fill"></i></a>
-        <a href="https://www.github.com/" target="_blank" class="home-social-link"><i class="ri-github-fill"></i></a>
-      </div>
+      <img src="assets/images/profile1.png" alt="Gabriel Ramores profile photo" class="home-img">
     </div>
+
+    <div class="home-social">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="home-social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="home-social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+      <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" class="home-social-link" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+    </div>
+  </div>
 </section>
 
-<!------------ ABOUT ------------>
+<!-- ============ ABOUT ============ -->
 <section class="about section" id="about">
   <div class="about-container container grid">
     <div class="about-experience">
@@ -96,8 +81,7 @@
     </div>
 
     <div>
-      <h2 class="about-description">With <span class="text-gradient">Over two years of designing</span>, I specialize in <span class="text-gradient">transforming ideas and concepts</span> into engaging, <span class="text-gradient">interactive digital experiences</span> for clients worldwide.
-      </h2>
+      <h2 class="about-description">With <span class="text-gradient">Over two years of designing</span>, I specialize in <span class="text-gradient">transforming ideas and concepts</span> into engaging, <span class="text-gradient">interactive digital experiences</span> for clients worldwide.</h2>
       <a href="#portfolio" class="button">My Works</a>
     </div>
 
@@ -106,12 +90,10 @@
         <h3 class="about-item-no"><count-up>10</count-up></h3>
         <p class="about-details">Projects</p>
       </li>
-
       <li class="about-item">
         <h3 class="about-item-no"><count-up>5</count-up></h3>
         <p class="about-details">Clients</p>
       </li>
-
       <li class="about-item">
         <h3 class="about-item-no"><count-up>10</count-up></h3>
         <p class="about-details">Job done successfully</p>
@@ -120,147 +102,130 @@
   </div>
 </section>
 
-<!------------ SERVICES ------------>
+<!-- ============ SERVICES ============ -->
 <section class="services section" id="services">
   <h2 class="section-title">My Services</h2>
 
   <div class="services-container container grid">
-  
     <article class="services-card">
       <span class="services-no">01</span>
-
       <h3 class="services-title">Responsive Design</h3>
       <p class="services-description">Ensure your website looks great on any device, with layouts that adapt to different screen sizes seamlessly.</p>
     </article>
 
     <article class="services-card">
       <span class="services-no">02</span>
-
       <h3 class="services-title">CMS Development</h3>
       <p class="services-description">Set-up user-friendly CMS solutions like WordPress or custom built options so clients can manage content easily.</p>
     </article>
 
     <article class="services-card">
       <span class="services-no">03</span>
-
       <h3 class="services-title">API Integrations</h3>
       <p class="services-description">Build and integrate APIs to connect websites with third-party applications, enhancing functionality.</p>
     </article>
   </div>
 </section>
 
-<!------------ SKILLS ------------>
+<!-- ============ SKILLS ============ -->
 <section class="skills section" id="skills">
-<h2 class="section-title">My Skills</h2>
+  <h2 class="section-title">My Skills</h2>
 
-<div class="skills-container container grid">
-  <div class="skills-group">
-    <h3 class="skills-title">Frontend Developer</h3>
-
-    <div class="skills-items grid">
-      <div class="skills-data">
-        <div class="skills-blob">
-          <img src="assets/images/html-logo.svg" alt="" class="skills-img"/>
+  <div class="skills-container container grid">
+    <div class="skills-group">
+      <h3 class="skills-title">Frontend Developer</h3>
+      <div class="skills-items grid">
+        <div class="skills-data">
+          <div class="skills-blob">
+            <img src="assets/images/html-logo.svg" alt="HTML logo" class="skills-img">
+          </div>
+          <h3 class="skills-name">HTML</h3>
+          <span class="skills-level">Intermediate</span>
         </div>
 
-        <h3 class="skills-name">HTML</h3>
-        <span class="skills-level">Intermediate</span>
-      </div>
-
-            <div class="skills-data">
-        <div class="skills-blob">
-          <img src="assets/images/css-logo.svg" alt="" class="skills-img"/>
+        <div class="skills-data">
+          <div class="skills-blob">
+            <img src="assets/images/css-logo.svg" alt="CSS logo" class="skills-img">
+          </div>
+          <h3 class="skills-name">CSS</h3>
+          <span class="skills-level">Advanced</span>
         </div>
 
-        <h3 class="skills-name">CSS</h3>
-        <span class="skills-level">Advanced</span>
-      </div>
-
-            <div class="skills-data">
-        <div class="skills-blob">
-          <img src="assets/images/javascript-logo.svg" alt="" class="skills-img"/>
+        <div class="skills-data">
+          <div class="skills-blob">
+            <img src="assets/images/javascript-logo.svg" alt="JavaScript logo" class="skills-img">
+          </div>
+          <h3 class="skills-name">JavaScript</h3>
+          <span class="skills-level">Intermediate</span>
         </div>
 
-        <h3 class="skills-name">JavaScript</h3>
-        <span class="skills-level">Intermediate</span>
-      </div>
-
-            <div class="skills-data">
-        <div class="skills-blob">
-          <img src="assets/images/react-logo.svg" alt="" class="skills-img"/>
+        <div class="skills-data">
+          <div class="skills-blob">
+            <img src="assets/images/react-logo.svg" alt="React logo" class="skills-img">
+          </div>
+          <h3 class="skills-name">React</h3>
+          <span class="skills-level">Basic</span>
         </div>
 
-        <h3 class="skills-name">React</h3>
-        <span class="skills-level">Basic</span>
-      </div>
-
-            <div class="skills-data">
-        <div class="skills-blob">
-          <img src="assets/images/tailwind-css-logo.svg" alt="" class="skills-img"/>
+        <div class="skills-data">
+          <div class="skills-blob">
+            <img src="assets/images/tailwind-css-logo.svg" alt="Tailwind CSS logo" class="skills-img">
+          </div>
+          <h3 class="skills-name">Tailwind</h3>
+          <span class="skills-level">Intermediate</span>
         </div>
-
-        <h3 class="skills-name">Tailwind</h3>
-        <span class="skills-level">Intermediate</span>
       </div>
-    
     </div>
-  </div>
 
     <div class="skills-group">
-    <h3 class="skills-title">Web Designer</h3>
-
-    <div class="skills-items grid">
-      <div class="skills-data">
-        <div class="skills-blob">
-          <img src="assets/images/figma-logo.svg" alt="" class="skills-img"/>
+      <h3 class="skills-title">Web Designer</h3>
+      <div class="skills-items grid">
+        <div class="skills-data">
+          <div class="skills-blob">
+            <img src="assets/images/figma-logo.svg" alt="Figma logo" class="skills-img">
+          </div>
+          <h3 class="skills-name">Figma</h3>
+          <span class="skills-level">Advanced</span>
         </div>
 
-        <h3 class="skills-name">Figma</h3>
-        <span class="skills-level">Advance</span>
-      </div>
-
-            <div class="skills-data">
-        <div class="skills-blob">
-          <img src="assets/images/sketch-logo.svg" alt="" class="skills-img"/>
+        <div class="skills-data">
+          <div class="skills-blob">
+            <img src="assets/images/sketch-logo.svg" alt="Sketch logo" class="skills-img">
+          </div>
+          <h3 class="skills-name">Sketch</h3>
+          <span class="skills-level">Basic</span>
         </div>
 
-        <h3 class="skills-name">Sketch</h3>
-        <span class="skills-level">Basic</span>
-      </div>
-
-            <div class="skills-data">
-        <div class="skills-blob">
-          <img src="assets/images/adobe-xd-logo.svg" alt="" class="skills-img"/>
+        <div class="skills-data">
+          <div class="skills-blob">
+            <img src="assets/images/adobe-xd-logo.svg" alt="Adobe XD logo" class="skills-img">
+          </div>
+          <h3 class="skills-name">Adobe XD</h3>
+          <span class="skills-level">Intermediate</span>
         </div>
 
-        <h3 class="skills-name">Adobe XD</h3>
-        <span class="skills-level">Intermediate</span>
-      </div>
-
-            <div class="skills-data">
-        <div class="skills-blob">
-          <img src="assets/images/adobe-photoshop-logo.svg" alt="" class="skills-img"/>
+        <div class="skills-data">
+          <div class="skills-blob">
+            <img src="assets/images/adobe-photoshop-logo.svg" alt="Adobe Photoshop logo" class="skills-img">
+          </div>
+          <h3 class="skills-name">Photoshop</h3>
+          <span class="skills-level">Intermediate</span>
         </div>
 
-        <h3 class="skills-name">Photoshop</h3>
-        <span class="skills-level">Intermediate</span>
-      </div>
-
-            <div class="skills-data">
-        <div class="skills-blob">
-          <img src="assets/images/invision-logo.svg" alt="" class="skills-img"/>
-        </div>
-
-        <h3 class="skills-name">InvisionApps</h3>
-        <span class="skills-level">Basic</span>
+        <div class="skills-data">
+          <div class="skills-blob">
+            <img src="assets/images/invision-logo.svg" alt="InVision logo" class="skills-img">
+          </div>
+          <h3 class="skills-name">InvisionApps</h3>
+          <span class="skills-level">Basic</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!------------ RESUME ------------>
-<section class="resume-section">
+<!-- ============ RESUME ============ -->
+<section class="resume-section" id="resume">
   <h2 class="section-title">My Journey</h2>
 
   <div class="resume-container grid">
@@ -270,55 +235,51 @@
         <h3 class="resume-title">Apple</h3>
         <span class="resume-duration">Jan 2023 - May 2024</span>
       </div>
-
       <div class="resume-right">
         <h3 class="resume-title">UI/UX Designer</h3>
         <p class="resume-description">Created practical web design and increased the engagement of client's customers by 50%</p>
       </div>
     </div>
 
-        <div class="resume-item grid">
+    <div class="resume-item grid">
       <div class="resume-right">
         <i class="ri-facebook-circle-fill resume-icon"></i>
         <h3 class="resume-title">Facebook</h3>
         <span class="resume-duration">Jun 2020 - Jan 2023</span>
       </div>
-
       <div class="resume-left">
         <h3 class="resume-title">UI/UX Designer</h3>
         <p class="resume-description">Improved the overall looks of facebook design and increased the user engagement by 500%</p>
       </div>
     </div>
 
-        <div class="resume-item grid">
+    <div class="resume-item grid">
       <div class="resume-left">
         <i class="ri-graduation-cap-fill resume-icon"></i>
         <h3 class="resume-title">University</h3>
         <span class="resume-duration">March 2018 - March 2020</span>
       </div>
-
       <div class="resume-right">
         <h3 class="resume-title">STEM</h3>
-        <p class="resume-description">Science, Technology, Engineering, and Mathematics </p>
+        <p class="resume-description">Science, Technology, Engineering, and Mathematics</p>
       </div>
     </div>
 
-        <div class="resume-item grid">
+    <div class="resume-item grid">
       <div class="resume-right">
         <i class="ri-graduation-cap-fill resume-icon"></i>
         <h3 class="resume-title">University</h3>
         <span class="resume-duration">March 2024 - Current</span>
       </div>
-
       <div class="resume-left">
         <h3 class="resume-title">BS in Computer Science</h3>
-        <p class="resume-description">I’m currently pursuing my college degree, driven by passion and art. My goal is to serve the community, build systems that help others, and leave a lasting legacy.</p>
+        <p class="resume-description">I'm currently pursuing my college degree, driven by passion and art. My goal is to serve the community, build systems that help others, and leave a lasting legacy.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!------------ PORTFOLIO ------------>
+<!-- ============ PORTFOLIO ============ -->
 <section class="work section" id="portfolio">
   <h2 class="section-title">Portfolio</h2>
 
@@ -333,88 +294,68 @@
     <div class="work-container grid">
       <div class="mix branding">
         <article class="work-card">
-          <img src="assets/images/project-1.jpeg" alt="" class="work-img">
-
+          <img src="assets/images/project-1.jpeg" alt="Trip branding project" class="work-img">
           <h4 class="work-category">Branding</h4>
           <h3 class="work-title">Trip</h3>
-
           <p class="work-description">Etong section nato di ko pa nalalagyan bukas nalang siguro pakatapos magkape. Good Morning!</p>
-
           <a href="#" class="work-link">
             Visit Project <i class="ri-arrow-right-line work-icon"></i>
-          </a> 
-          
+          </a>
         </article>
       </div>
 
-         <div class="mix development">
+      <div class="mix development">
         <article class="work-card">
-          <img src="assets/images/project-2.jpg" alt="" class="work-img">
-
+          <img src="assets/images/project-2.jpg" alt="Explore development project" class="work-img">
           <h4 class="work-category">Development</h4>
           <h3 class="work-title">Explore</h3>
-
           <p class="work-description">Etong section nato di ko pa nalalagyan bukas nalang siguro pakatapos magkape. Good Morning!</p>
-
           <a href="#" class="work-link">
             Visit Project <i class="ri-arrow-right-line work-icon"></i>
-          </a> 
-          
+          </a>
         </article>
       </div>
 
-         <div class="mix photography">
+      <div class="mix photography">
         <article class="work-card">
-          <img src="assets/images/project-3.jpeg" alt="" class="work-img">
-
+          <img src="assets/images/project-3.jpeg" alt="Trip photography project" class="work-img">
           <h4 class="work-category">Photography</h4>
           <h3 class="work-title">Trip P.</h3>
-
           <p class="work-description">Etong section nato di ko pa nalalagyan bukas nalang siguro pakatapos magkape. Good Morning!</p>
-
           <a href="#" class="work-link">
             Visit Project <i class="ri-arrow-right-line work-icon"></i>
-          </a> 
-          
+          </a>
         </article>
       </div>
 
-         <div class="mix photography">
+      <div class="mix photography">
         <article class="work-card">
-          <img src="assets/images/project-4.jpeg" alt="" class="work-img">
-
+          <img src="assets/images/project-4.jpeg" alt="Nungka photography project" class="work-img">
           <h4 class="work-category">Photography</h4>
           <h3 class="work-title">Nungka</h3>
-
           <p class="work-description">Etong section nato di ko pa nalalagyan bukas nalang siguro pakatapos magkape. Good Morning!</p>
-
           <a href="#" class="work-link">
             Visit Project <i class="ri-arrow-right-line work-icon"></i>
-          </a> 
-          
+          </a>
         </article>
       </div>
 
-         <div class="mix development">
+      <div class="mix development">
         <article class="work-card">
-          <img src="assets/images/project-5.jpg" alt="" class="work-img">
-
+          <img src="assets/images/project-5.jpg" alt="Stay Fit development project" class="work-img">
           <h4 class="work-category">Development</h4>
           <h3 class="work-title">Stay Fit</h3>
-
           <p class="work-description">Etong section nato di ko pa nalalagyan bukas nalang siguro pakatapos magkape. Good Morning!</p>
-
           <a href="#" class="work-link">
             Visit Project <i class="ri-arrow-right-line work-icon"></i>
-          </a> 
-          
+          </a>
         </article>
       </div>
     </div>
   </div>
 </section>
-<!------------ CONTACT ------------>
 
+<!-- ============ CONTACT ============ -->
 <section class="contact section" id="contact">
   <div class="contact-container container grid">
     <div class="contact-group">
@@ -422,26 +363,22 @@
 
       <div class="contact-data grid">
         <div class="contact-item">
-          <span class="contact-icon">
-            <i class="ri-mail-line"></i>
-          </span>
+          <span class="contact-icon"><i class="ri-mail-line"></i></span>
           <div>
             <h3 class="contact-title">E-mail</h3>
             <p class="contact-description">gabrielramores05@gmail.com</p>
           </div>
         </div>
 
-          <div class="contact-item">
-          <span class="contact-icon">
-            <i class="ri-phone-line"></i>
-          </span>
+        <div class="contact-item">
+          <span class="contact-icon"><i class="ri-phone-line"></i></span>
           <div>
             <h3 class="contact-title">Phone</h3>
             <p class="contact-description">09073469047</p>
           </div>
         </div>
 
-          <div class="contact-item">
+        <div class="contact-item">
           <span class="contact-icon"><i class="ri-map-pin-line"></i></span>
           <div>
             <h3 class="contact-title">Location</h3>
@@ -452,75 +389,53 @@
     </div>
 
     <form class="contact-form grid" id="contact-form">
-  <div class="contact-form-div">
-    <label for="contact-name" class="contact-label">Name</label>
-    <input 
-      type="text" 
-      name="name" 
-      class="contact-input" 
-      id="contact-name"
-      autocomplete="name"
-    />
-  </div>
+      <div class="contact-form-div">
+        <label for="contact-name" class="contact-label">Name</label>
+        <input type="text" name="name" class="contact-input" id="contact-name" autocomplete="name">
+      </div>
 
-  <div class="contact-form-div">
-    <label for="contact-email" class="contact-label">Email</label>
-    <input 
-      type="email" 
-      name="email" 
-      class="contact-input" 
-      id="contact-email"
-      autocomplete="email"
-    />
-  </div>
+      <div class="contact-form-div">
+        <label for="contact-email" class="contact-label">Email</label>
+        <input type="email" name="email" class="contact-input" id="contact-email" autocomplete="email">
+      </div>
 
-  <div class="contact-form-div">
-    <label for="contact-message" class="contact-label">Message</label>
-    <textarea 
-      name="message" 
-      class="contact-input contact-area" 
-      id="contact-message"
-      autocomplete="off"
-    ></textarea>
-  </div>
+      <div class="contact-form-div">
+        <label for="contact-message" class="contact-label">Message</label>
+        <textarea name="message" class="contact-input contact-area" id="contact-message" autocomplete="off"></textarea>
+      </div>
 
-  <button type="submit" class="button contact-button">Send Message</button>
-  <p class="contact-message" id="message"></p>
-</form>
+      <button type="submit" class="button contact-button">Send Message</button>
+      <p class="contact-message" id="message"></p>
+    </form>
   </div>
-  
-
 </section>
 
 </main>
 
-<!------------ FOOTER ------------>
+<!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="footer-container container">
     <div class="footer-social">
-      <a href="https://www.instagram.com/" target="_blank" class="footer-link"><i class="ri-instagram-line"></i></a>
-      <a href="https://www.github.com/" target="_blank" class="footer-link"><i class="ri-github-fill"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+      <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="GitHub"><i class="ri-github-fill"></i></a>
     </div>
-
     <p class="footer-copyright">© 2026 <span>Gabriel</span>. All Rights Reserved</p>
     <p class="footer-copyright">Developed by <span>Gabriel Ramores</span></p>
   </div>
 </footer>
-<!------------ GSAP ------------>
+
+<!-- ============ GSAP ============ -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-
-<!------------ COUNT-UP ------------>
+<!-- ============ COUNT-UP ============ -->
 <script type="module" src="https://cdn.jsdelivr.net/gh/lekoala/formidable-elements@master/dist/count-up.min.js"></script>
-
-<!------------ MIXITUP ------------>
+<!-- ============ MIXITUP ============ -->
 <script src="assets/js/mixitup.min.js"></script>
-
-<!------------ EMAIL JS ------------>
+<!-- ============ EMAIL JS ============ -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<!------------ SCROLL REVEAL ------------>
+<!-- ============ SCROLL REVEAL ============ -->
 <script src="https://unpkg.com/scrollreveal"></script>
-<!------------ MAIN JS ------------>
-  <script src="assets/js/main.js"></script>
+<!-- ============ MAIN JS ============ -->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
